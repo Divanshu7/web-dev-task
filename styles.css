@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #000; 
+    padding: 20px;
+    color: #fff; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.company-name {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff6f61; 
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #ccc; 
+    line-height: 1.5;
+}
+
+.team h2 {
+    text-align: center;
+    color: #ff6f61; 
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.team-section {
+    margin-bottom: 40px;
+}
+
+.team-section h3 {
+    font-size: 24px;
+    color: #ff6f61; 
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: #444; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: calc(25% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 18px;
+    color: #fff; 
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #ccc; 
+    margin-bottom: 0;
+}
+
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+
+@media (max-width: 992px) {
+    .team-member {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+    }
+}
